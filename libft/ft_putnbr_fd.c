@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:13:29 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/10/30 00:13:48 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/06 23:30:10 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	ft_putnbr_fd(int n, int fd)
 	int		power;
 	char	c;
 
+	if (fd < 0)
+		return ;
 	nbr = n;
 	power = 1;
 	if (nbr < 0)

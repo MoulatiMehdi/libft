@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:31:37 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/10/29 11:42:10 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/06 23:42:50 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	s1_len;
 	size_t	s2_len;
 
+	if (!s1 || !s2)
+		return (0);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	p = malloc(sizeof(char) * (s1_len + s2_len + 1));
