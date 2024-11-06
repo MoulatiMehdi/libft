@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:09:42 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/06 00:57:38 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/06 23:30:41 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
-	if (!s)
+	if (!s || fd < 0)
 		return ;
 	i = 0;
 	while (s[i])

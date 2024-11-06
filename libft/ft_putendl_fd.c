@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:12:08 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/06 00:56:39 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/06 23:29:47 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (!s)
+	if (!s || fd < 0)
 		return ;
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
