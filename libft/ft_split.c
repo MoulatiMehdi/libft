@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:30:25 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/06 23:43:54 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:17:28 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,10 +66,11 @@ char	**ft_split(char const *s, char c)
 	size_t	size;
 	size_t	j;
 
-	if (!s)
+	j = count_strs(s, c);
+	if (j == 0)
 		return (0);
+	strs = malloc(sizeof(char *) * (j + 1));
 	j = 0;
-	strs = malloc(sizeof(char *) * (count_strs(s, c) + 1));
 	if (!strs)
 		return (0);
 	while (*s)
