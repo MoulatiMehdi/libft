@@ -6,10 +6,9 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:50:18 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/06 18:04:58 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/09 21:15:53 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 static void	init_lookup(const char *set, char lookup[])

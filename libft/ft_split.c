@@ -6,12 +6,11 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:30:25 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/09 20:17:42 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/09 22:54:47 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static size_t	count_strs(char const *s, char c)
 {
