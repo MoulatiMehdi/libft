@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 12:19:28 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 12:19:28 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/10 13:00:14 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	c = (char)c;
 	while (str[i])
 		i++;
-	while (i >= 0)
+	while (1)
 	{
 		if (str[i] == c)
 			return ((char *)str + i);
+		if (!i)
+			break ;
 		i--;
 	}
 	return (0);
