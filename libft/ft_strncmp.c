@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 15:34:56 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/10/28 20:01:10 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:19:09 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:19:09 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

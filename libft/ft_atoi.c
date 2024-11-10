@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/27 21:49:56 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/09 15:36:25 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:17:05 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:17:09 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_atoi(const char *str)

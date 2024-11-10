@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:07:24 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/06 14:40:51 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:19:07 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:19:07 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)

@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:06:47 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/10/28 20:21:27 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:19:10 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:19:10 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)

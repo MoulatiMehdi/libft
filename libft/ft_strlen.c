@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 15:11:42 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/10/28 19:55:05 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:19:08 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:19:08 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlen(const char *str)

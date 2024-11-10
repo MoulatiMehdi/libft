@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 14:06:42 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/09 17:17:34 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:18:29 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:18:33 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

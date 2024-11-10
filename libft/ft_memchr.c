@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 14:06:42 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/09 18:42:43 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:18:55 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:18:55 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

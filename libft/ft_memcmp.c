@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 14:30:46 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/09 19:17:35 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:18:56 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:18:56 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

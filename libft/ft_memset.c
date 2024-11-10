@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 14:06:42 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/06 18:48:21 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:18:58 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:18:58 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)

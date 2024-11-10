@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/30 19:47:33 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/09 20:10:28 by mmoulati         ###   ########.fr       */
+/*   Created: 2024/11/10 12:18:49 by mmoulati          #+#    #+#             */
+/*   Updated: 2024/11/10 12:18:49 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
