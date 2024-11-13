@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:05 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:17 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/12 20:56:11 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	if (!dst && !src)
 		return (0);
+	if (dst == src)
+		return (dst);
 	p_src = src;
 	p_dst = dst;
 	i = 0;
