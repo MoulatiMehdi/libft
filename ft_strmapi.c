@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:08 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:20 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:10:20 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		len++;
 	p = malloc(sizeof(char) * (len + 1));
 	if (!p)
-		return (0);
+		return (NULL);
 	p[len] = 0;
 	i = 0;
 	while (i < len)

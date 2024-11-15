@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:03 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:15 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 20:57:59 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		ft_lstdelone(*lst, del);
 		*lst = p;
 	}
-	*lst = 0;
+	*lst = NULL;
 }

@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:09 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:21 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:15:58 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	size;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	size = ft_strlen(s);
 	if (size < start)
 		start = size;
 	if (size - start < len)
 		len = size - start;
 	p = malloc(len * sizeof(char) + 1);
-	if (p == 0)
-		return (0);
+	if (!p)
+		return (NULL);
 	ft_memcpy(p, s + start, len);
 	p[len] = '\0';
 	return (p);

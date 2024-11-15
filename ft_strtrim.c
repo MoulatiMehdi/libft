@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:09 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:21 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:14:38 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 
 	if (!s1)
-		return (0);
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s1);
 	if (end == 0)

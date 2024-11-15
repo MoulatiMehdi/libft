@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:09 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:20 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:13:06 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ char	*ft_strrchr(const char *str, int c)
 			break ;
 		i--;
 	}
-	return (0);
+	return (NULL);
 }

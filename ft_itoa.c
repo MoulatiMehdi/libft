@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:03 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:14 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 20:57:12 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_itoa(int n)
 	}
 	p = malloc(sizeof(char) * (len + 1));
 	if (!p)
-		return (0);
+		return (NULL);
 	p[len] = 0;
 	while (len--)
 	{

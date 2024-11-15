@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:05 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:16 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 20:59:47 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return (p + i);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

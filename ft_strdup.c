@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:07 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:18 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:07:52 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s1)
 	i = 0;
 	p = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	if (!p)
-		return (0);
+		return (NULL);
 	while (s1[i])
 	{
 		p[i] = s1[i];

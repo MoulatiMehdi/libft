@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:07 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:18 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:04:03 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,11 @@ static char	**free_all(char **strs, size_t size)
 	{
 		if (strs[size])
 			free(strs[size]);
-		strs[size] = 0;
+		strs[size] = NULL;
 	}
 	free(strs);
-	strs = 0;
-	return (0);
+	strs = NULL;
+	return (NULL);
 }
 
 static size_t	len_tocopy(char const *s, char c)
@@ -66,10 +66,10 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	strs = malloc(sizeof(char *) * (count_strs(s, c) + 1));
 	if (!strs)
-		return (0);
+		return (NULL);
 	j = 0;
 	while (*s)
 	{
@@ -83,6 +83,6 @@ char	**ft_split(char const *s, char c)
 			return (free_all(strs, j));
 		s += size;
 	}
-	strs[j] = 0;
+	strs[j] = NULL;
 	return (strs);
 }

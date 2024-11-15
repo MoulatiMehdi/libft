@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:09 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:20 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:10:42 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			return ((char *)haystack + i);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

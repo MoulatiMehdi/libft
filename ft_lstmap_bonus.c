@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:04 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:16 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 20:58:59 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ static t_list	*copy_item(void *content, void *(*f)(void *),
 	void	*data;
 
 	if (!del || !f)
-		return (0);
+		return (NULL);
 	data = (*f)(content);
 	new_elem = ft_lstnew(data);
 	if (!new_elem)
 	{
 		(*del)(data);
-		return (0);
+		return (NULL);
 	}
 	return (new_elem);
 }
@@ -40,7 +40,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		return (0);
 	head = copy_item(lst->content, f, del);
 	if (!head)
-		return (0);
+		return (NULL);
 	p = head;
 	lst = lst->next;
 	while (lst)
@@ -49,7 +49,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (!new_elem)
 		{
 			ft_lstclear(&head, del);
-			return (0);
+			return (NULL);
 		}
 		p->next = new_elem;
 		lst = lst->next;

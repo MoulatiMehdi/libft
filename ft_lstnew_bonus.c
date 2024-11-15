@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:04 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:16 by mmoulati         ###   ########.fr       */
+/*   Updated: 2024/11/13 20:59:31 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ t_list	*ft_lstnew(void *content)
 	if (!new_elem)
 		return (0);
 	new_elem->content = content;
-	new_elem->next = 0;
+	new_elem->next = NULL;
 	return (new_elem);
 }
