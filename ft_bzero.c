@@ -6,7 +6,7 @@
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:17:01 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/10 13:18:13 by mmoulati         ###   ########.fr       */
+/*   Updated: 2025/02/10 11:28:43 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*p;
 
+	if (s == NULL)
+		return ;
 	p = s;
 	while (n--)
 		p[n] = 0;

@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoulati <mmoulati@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 13:17:07 by mmoulati          #+#    #+#             */
-/*   Updated: 2024/11/13 21:04:03 by mmoulati         ###   ########.fr       */
+/*   Created: 2025/02/09 21:23:31 by mmoulati          #+#    #+#             */
+/*   Updated: 2025/02/10 11:32:41 by mmoulati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_strs(char const *s, char c)
+static size_t	count_strs(char const *s, char *c)
 {
 	size_t	count;
 	size_t	i;
@@ -21,19 +21,19 @@ static size_t	count_strs(char const *s, char c)
 		return (0);
 	i = 0;
 	count = 0;
-	while (s[i] && s[i] == c)
+	while (s[i] && ft_strchr(c, s[i]) != NULL)
 		i++;
 	while (s[i])
 	{
-		while (s[i] && s[i] != c)
+		while (s[i] && ft_strchr(c, s[i]) == NULL)
 			i++;
 		count++;
-		while (s[i] && s[i] == c)
+		while (s[i] && ft_strchr(c, s[i]) != NULL)
 			i++;
 		if (!s[i])
 			break ;
 	}
-	return (count);
+	return (count + (count == 0));
 }
 
 static char	**free_all(char **strs, size_t size)
@@ -49,40 +49,58 @@ static char	**free_all(char **strs, size_t size)
 	return (NULL);
 }
 
-static size_t	len_tocopy(char const *s, char c)
+static char	*ft_split_dup(const char **s, char *charset)
 {
 	size_t	size;
+	char	*str;
 
 	size = 0;
-	while (s[size] && s[size] != c)
+	while (s[size] && ft_strchr(charset, (*s)[size]) == NULL)
 		size++;
-	return (size);
+	str = ft_substr(*s, 0, size);
+	*str += size;
+	return (str);
 }
 
-char	**ft_split(char const *s, char c)
+void	ft_split_free(char ***strs)
+{
+	int	i;
+
+	if (strs == NULL || *strs == NULL)
+		return ;
+	i = 0;
+	while ((*strs)[i])
+	{
+		free((*strs)[i]);
+		i++;
+	}
+	free(*strs);
+	*strs = NULL;
+}
+
+char	**ft_split(char const *s, char *charset)
 {
 	char	**strs;
-	size_t	size;
 	size_t	j;
 
-	if (!s)
+	if (!s || !charset)
 		return (NULL);
-	strs = malloc(sizeof(char *) * (count_strs(s, c) + 1));
+	strs = malloc(sizeof(char *) * (count_strs(s, charset) + 1));
 	if (!strs)
 		return (NULL);
 	j = 0;
 	while (*s)
 	{
-		while (*s && *s == c)
+		while (*s && ft_strchr(charset, *s) != NULL)
 			s++;
 		if (!*s)
 			break ;
-		size = len_tocopy(s, c);
-		strs[j] = ft_substr(s, 0, size);
+		strs[j] = ft_split_dup(&s, charset);
 		if (!strs[j++])
 			return (free_all(strs, j));
-		s += size;
 	}
+	if (j == 0)
+		strs[j++] = ft_strdup("");
 	strs[j] = NULL;
 	return (strs);
 }
